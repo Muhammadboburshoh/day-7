@@ -5,7 +5,7 @@ import { useContext } from "react"
 
 function Footer ({ children }) {
 
-  const theme = useContext(ThemeContext)
+  const { theme } = useContext(ThemeContext)
 
   return (
     <footer className={theme}>

@@ -5,13 +5,13 @@ import { ThemeContext } from "../../ThemeContext"
 
 function Header () {
 
-  const theme = useContext(ThemeContext)
+  const { theme, setTheme } = useContext(ThemeContext)
 
   return (
     <header className={theme}>
       <h1>App</h1>
 
-					<select>
+					<select default={theme} onChange={(evt => setTheme(evt.target.value))}>
 						<option value="light">Light</option>
 						<option value="dark">Dark</option>
 					</select>
