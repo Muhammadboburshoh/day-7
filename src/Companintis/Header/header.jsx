@@ -11,7 +11,7 @@ function Header () {
     <header className={theme}>
       <h1>App</h1>
 
-					<select default={theme} onChange={(evt => setTheme(evt.target.value))}>
+					<select defaultValue={theme} onChange={(evt => setTheme(evt.target.value))}>
 						<option value="light">Light</option>
 						<option value="dark">Dark</option>
 					</select>

@@ -7,10 +7,13 @@ const ThemeProvider = ({children}) => {
 
   const [theme, setTheme] = useState(window.localStorage.getItem("theme") || "light")
 
-  useEffect(evt => {
-    console.log(theme);
+  useEffect(() => {
+
     window.localStorage.setItem("theme", theme)
-  },[theme])
+
+  },[
+    theme,
+  ])
 
   return (
     <ThemeContext.Provider value={{theme, setTheme}}>
