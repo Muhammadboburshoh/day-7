@@ -1,4 +1,3 @@
-import userEvent from "@testing-library/user-event";
 import { useState, createContext, useEffect } from "react";
 
 const ThemeContext = createContext()
