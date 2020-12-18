@@ -1,11 +1,22 @@
-import './App.css'
-// import TEST from "./test.jsx"
-import LOGIN from "./login.jsx"
+import "./App.css"
+import HEADER from "./Companintis/Header/header.jsx"
+import LOGIN from "./Companintis/Login/login.jsx"
+import FOOTER from "./Companintis/Footer/footer.jsx"
 
 function App() {
   return (
-    <LOGIN />
+    <>
+      <HEADER/>
+      <LOGIN />
+      <FOOTER>
+        <p>Abdusattor</p>
+      </FOOTER>
+    </>
   )
 }
 
 export default App
+
+/* const elementH1 = react.createElement("DIV", {}, null)
+const elementDiv = react.createElement("DIV", {}, [elementH1])
+ */

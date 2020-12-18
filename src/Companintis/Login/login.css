@@ -1,0 +1,31 @@
+button {
+  background-color: rgb(45, 45, 212);
+  color: wheat;
+  border-radius: 5px;
+  margin-left: 10px;
+  outline: none;
+  border: none;
+  margin-bottom: 40px;
+}
+
+button:active {
+  box-shadow: 0 0 0 2px rgb(45, 45, 212);
+  font-size: 14px;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+input {
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+}
+
+select {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
